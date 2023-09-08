@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    background: #7DCFB6;
+    width: 100%;
+    height: 120vh;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    height: 40vh;
+    top: 25vh;
+    left: 25vw;
+    background-color: #58A4B0;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    box-shadow: -2px -2px 20px 0px rgba(12, 124, 89, 0.29);
+    -webkit-box-shadow: -2px -2px 20px 0px rgba(12, 124, 89, 0.29);
+    -moz-box-shadow: -2px -2px 20px 0px rgba(12, 124, 89, 0.29);
+    transition: top 1s;
+    -webkit-transition: top 1s;
+    -moz-transition: top 1s;
+    -ms-transition: top 1s;
+    -o-transition: top 1s;
+}
+
+.result {
+    width: 50%;
+    top: 25vh;
+    left: 25vw;
+    height: 40vh;
+    background-color: #58A4B0;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    box-shadow: -2px -2px 20px 0px rgba(12, 124, 89, 0.29);
+    -webkit-box-shadow: -2px -2px 20px 0px rgba(12, 124, 89, 0.29);
+    -moz-box-shadow: -2px -2px 20px 0px rgba(12, 124, 89, 0.29);
+    position: absolute;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    z-index: 0;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #fff;
+    text-shadow: -2px -2px 20px 0px rgba(0, 0, 0, 0.29);
+    -webkit-text-shadow: -2px -2px 20px 0px rgba(0, 0, 0, 0.29);
+    -moz-text-shadow: -2px -2px 20px 0px rgba(0, 0, 0, 0.29);
+}
+
+.search-bar {
+    border: none;
+    width: 27rem;
+    height: 3rem;
+    border-radius: 2rem;
+    /* background-color: #7DCFB6 ; */
+    padding: 0 2rem;
+    font-size: larger;
+    box-shadow: -2px -2px 20px 0px rgba(0, 0, 0, 0.29);
+    -webkit-box-shadow: -2px -2px 20px 0px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: -2px -2px 20px 0px rgba(0, 0, 0, 0.29);
+}
+
+.search-bar:focus {
+    border: none;
+    background-color: #ffffff;
+}
+
+.search-btn {
+    width: 12rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D74E09;
+    color: #fff;
+}
+
+.searched-word {
+    margin: 1rem 1rem 0 1rem;
+    font-size: 4rem;
+    color: #ECE4B7;
+}
+
+.phonetic {
+    margin: 0 1rem 0 1rem;
+    font-size: 1rem;
+    color: #E2E8C0;
+}
+
+.definition {
+    margin: 1rem 1rem 0 1rem;
+    font-size: 2rem;
+    color: #E2E8C0;
+}
+
+.example {
+    margin: 0.5rem 1rem 0 1rem;
+    font-size: 1.5rem;
+    color: #E2E8C0;
+}
+
+.fa-soundcloud {
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    font-size: 2rem;
+    cursor: pointer;
+    width: 7rem;
+    height: 3rem;
+    border: none;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+@media only screen and (max-width: 1230px) {
+    .fa-soundcloud {
+        left: 70%;
+    }
+
+    .container {
+        height: 150vh;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .search-bar {
+        width: 21rem;
+        height: 2rem;
+    }
+
+    .definition {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .title {
+        font-size: 1rem;
+    }
+
+    .search-bar {
+        width: 18rem;
+        height: 1.5rem;
+    }
+
+    .definition {
+        font-size: 1rem;
+    }
+
+    .fa-soundcloud {
+        left: 60%;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+
+    .search-bar {
+        width: 12rem;
+        height: 1.5rem;
+    }
+
+    .fa-soundcloud {
+        left: 50%;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .fa-soundcloud {
+        font-size: 1rem;
+        cursor: pointer;
+        width: 6rem;
+        height: 2rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .search-bar {
+        width: 80%;
+    }
+
+    .search-btn {
+        width: 10rem;
+        height: 2rem;
+        font-size: 1.5rem;
+    }
+    .searched-word{
+        font-size: 3rem;
+    }
+    .fa-soundcloud{
+        width: 30%;
+    }
+}
